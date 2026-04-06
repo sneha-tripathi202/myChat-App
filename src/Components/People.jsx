@@ -5,7 +5,7 @@ const People = () => {
     <div className='sm:'>
       <div><img src="" alt="" />
            <h1>Sneha</h1>
-           <div><span>.</span><h1>Online</h1></div></div>
+           <div><span>hhfgh</span><h1>Online</h1></div></div>
       <div></div>
     </div>
   )
