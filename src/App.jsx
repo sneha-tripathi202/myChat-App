@@ -12,9 +12,9 @@ function App() {
 
   return (
     <>
-{/* <SignUp/> */}
+<SignUp/>
 {/* <LoginPage/>           */}
-<Chatpage/>
+{/* <Chatpage/> */}
     </>
   )
 }
