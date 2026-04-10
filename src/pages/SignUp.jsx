@@ -13,7 +13,7 @@ const SignUp = () => {
           <input className='bg-white/30 p-2 sm:p-4 lg:p-2 m-1 rounded placeholder-gray-300' type="text" placeholder='Email' />
           <input className='bg-white/30 p-2 sm:p-4 lg:p-2 m-1 rounded placeholder-gray-300' type="text" placeholder='Passowrd' />
           <input className='bg-white/30 p-2 sm:p-4 lg:p-2 m-1 rounded placeholder-gray-300' type="text" placeholder='Confirm Password' />
-          <button className='mt-6 mb-4 p-1 sm:p-2 lg:p-2 text-[0.7] font-semibold mx-4 rounded sm:w-70 lg:w-60 bg-linear-to-l from-blue-700 via-blue-500 to-blue-900'>Sign up</button></form>
+          <button className='mt-6 mb-4 p-1 sm:p-2 lg:p-2  text-[0.7] font-semibold mx-4 rounded sm:w-70 lg:w-60 bg-linear-to-l from-blue-700 via-blue-500 to-blue-900'>Sign up</button></form>
         </div>
         
         <div > <h3 className='mb-2 text-mist-100'>Already have an account? Login</h3></div>
