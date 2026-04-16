@@ -5,7 +5,7 @@ import BubbleOut from './BubbleOut'
 
 const Chatbublesdashboard = () => {
   return (
-    <div className='w-screen h-screen bg-linear-to-r from-gray-950  to-gray-900 '>
+    <div className='w-screen h-screen bg-linear-to-r from-gray-950  to-gray-900 backgro '>
      <div className=' h-full flex flex-col justify-between' >
        <div className='w-full h-20 shadow-2xl shadow-gray-950 bg-black/70 flex text-amber-50  '><img className='w-15 h-15 bg-amber-300 rounded-4xl m-3' src="" alt="" />
        <div className='flex gap-50'>

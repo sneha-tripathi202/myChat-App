@@ -6,14 +6,16 @@ import './App.css'
 import SignUp from './pages/SignUp'
 import LoginPage from './pages/LoginPage'
 import Chatpage from './pages/Chatpage'
+import Member from './pages/Member'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-<SignUp/>
-{/* <LoginPage/>           */}
+{/* <SignUp/> */}
+{/* <LoginPage/> */}
+<Member/>          
 {/* <Chatpage/> */}
     </>
   )
