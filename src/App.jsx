@@ -15,11 +15,8 @@ function App() {
   return (
     <>
     
- <Header/>
-<SignUp/>
-{/* <LoginPage/> */}
-{/* <Member/>           */}
-{/* <Chatpage/> */}
+ <header/>
+ <SignUp/>
     </>
   )
 }

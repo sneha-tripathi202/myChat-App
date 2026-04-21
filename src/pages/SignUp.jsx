@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Header from '../Components/Header'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { contextTheme } from '../context/Context'
 
 const SignUp = () => {
   const [name, setName] = useState('')
@@ -7,7 +9,8 @@ const SignUp = () => {
   const [password, setpassword] = useState('')
   const [conPassword, setconPassword] = useState('')
   const [error, seterror] = useState(false)
-  
+  const navigate =useNavigate()
+  const { setuserName } = useContext(contextTheme);
   const submitHandler=(e)=>{
  e.preventDefault()
    if(!name) alert("Enter name")
@@ -15,11 +18,16 @@ const SignUp = () => {
    else if(!password) alert("Enter email")
    else if(!conPassword) alert("Enter conPassword")
 
-    else alert("Form submitted successfully!");
+    else {alert("Form submitted successfully!");
+       navigate("/chat")
+       setuserName(name)
+       
+    }
      setName('')
      setpassword('')
      setemail('')
      setconPassword('')
+
      
   }
   function inputs(e){
@@ -35,6 +43,7 @@ function emails(e){
      setconPassword(e.target.value)
   
 }
+
   return (
     <div className='  w-screen h-screen bg-radial-[at_70%_75%] from-blue-800 via-gray-900 to-black to-90% flex flex-col  items-center   justify-center m-0 p-0 '>
      
@@ -51,7 +60,11 @@ function emails(e){
           <button  className='mt-6 mb-4 p-1 sm:p-2 lg:p-2  text-[0.7] font-semibold mx-4 rounded sm:w-70 lg:w-60 bg-linear-to-l from-blue-700 via-blue-500 to-blue-900'>Sign up</button></form>
         </div>
         
-        <div > <h3 className='mb-2 text-mist-100'>Already have an account? Login</h3></div>
+        <div > <h3 className='mb-2 text-mist-100'>Already have an account? 
+        
+            <Link to="/login" className='hover:text-blue-700 text-blue-400'>Login</Link>   
+            
+            </h3></div>
       </div>
     </div>
   )
